@@ -11,7 +11,7 @@ define([
          * @param {Object} options - options object
          * @param {ImageryAssistant.imageryType} options.type - type of the imagery
          * @param {String} options.url - url of the pro
-         * @param {String} options.layers - name of the layers
+         * @param {String} options.layerName - name of the layers
          */
         function onAddImagery(options) {
             CesiumAssistant.Imagery.add(options);
