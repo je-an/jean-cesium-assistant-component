@@ -12,7 +12,7 @@ define([
             CesiumAssistant.Camera.flyToBounding(3, bounding);
         }
         return {
-            id: "GisCameraComponent",
+            id: "CesiumCameraComponent",
             onComponentWire: function () { // jscs:ignore
                 EventDispatcher.subscribeEvent(EventType.FLY_TO_BOUNDING, onFlyToBounding);
             },

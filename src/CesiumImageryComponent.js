@@ -25,7 +25,7 @@ define([
             CesiumAssistant.Imagery.removeAll();
         }
         return {
-            id: "GisImageryComponent",
+            id: "CesiumImageryComponent",
             onComponentWire: function () { // jscs:ignore
                 EventDispatcher.subscribeEvent(EventType.ADD_IMAGERY, onAddImagery);
                 EventDispatcher.subscribeEvent(EventType.REMOVE_IMAGERY, onRemoveImagery);

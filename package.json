@@ -1,6 +1,6 @@
 {
   "name": "jean-cesium-assistant-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jean-cesium-assistant components for use in jean-runtime",
   "main": "dist/jean-cesium-assistant-component.js",
   "scripts": {

@@ -1,6 +1,6 @@
 define(["CesiumAssistant"], function (CesiumAssistant) {
     return {
-        id: "GisInitialisationComponent",
+        id: "CesiumInitialisationComponent",
         onComponentWire: function () { // jscs:ignore
 
         },

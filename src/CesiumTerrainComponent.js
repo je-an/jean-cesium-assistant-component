@@ -20,7 +20,7 @@ define([
         CesiumAssistant.Terrain.remove();
     }
     return {
-        id: "GisTerrainComponent",
+        id: "CesiumTerrainComponent",
         onComponentWire: function () { // jscs:ignore
             EventDispatcher.subscribeEvent(EventType.ADD_TERRAIN, onAddTerrain);
             EventDispatcher.subscribeEvent(EventType.REMOVE_TERRAIN, onRemoveTerrain);
