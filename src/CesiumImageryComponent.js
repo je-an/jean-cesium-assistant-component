@@ -24,12 +24,22 @@ define([
         function onRemoveAllImagery() {
             CesiumAssistant.Imagery.removeAll();
         }
+        /** @param {String} name - name of the imagery */
+        function onShowImagery(name) {
+            CesiumAssistant.Imagery.show(name);
+        }
+        /** @param {String} name - name of the imagery  */
+        function onHideImagery(name) {
+            CesiumAssistant.Imagery.hide(name);
+        }
         return {
             id: "CesiumImageryComponent",
             onComponentWire: function () { // jscs:ignore
                 EventDispatcher.subscribeEvent(EventType.ADD_IMAGERY, onAddImagery);
                 EventDispatcher.subscribeEvent(EventType.REMOVE_IMAGERY, onRemoveImagery);
                 EventDispatcher.subscribeEvent(EventType.REMOVE_ALL_IMAGERY, onRemoveAllImagery);
+                EventDispatcher.subscribeEvent(EventType.SHOW_IMAGERY, onShowImagery);
+                EventDispatcher.subscribeEvent(EventType.HIDE_IMAGERY, onHideImagery);
             },
             onComponentStart: function () { // jscs:ignore
 
